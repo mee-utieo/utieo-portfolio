@@ -1,0 +1,738 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex">
+<meta name="description" content="UtieO design｜世界観から整える、小さなデザインアトリエ。サロン・教室向けLPの見本13本。">
+<meta name="theme-color" content="#1A2551">
+<title>UtieO design</title>
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="UtieO design">
+<meta property="og:title" content="UtieO design">
+<meta property="og:description" content="世界観から整える、小さなデザインアトリエ。サロン・教室向けLPの見本13本。">
+<meta property="og:url" content="https://utieo.pages.dev/">
+<meta property="og:image" content="https://utieo.pages.dev/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+</head>
+<body>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&family=Jost:wght@300;400;500&family=Noto+Sans+JP:wght@400;500;700&family=Sawarabi+Gothic&display=swap">
+<style>
+:root{
+  --cream:#F4F1EA; --cream-2:#ECE7DD; --panel:#FFFFFF; --navy:#1A2551; --navy-2:#111A3C; --navy-3:#26346B;
+  --ink:#1F2744; --ink-2:#6B6F80; --line:#D9D3C7; --line-2:#E6E1D7; --star:#FFDE59; --gold:#C9A85C;
+  --on-navy:#F4F1EA; --on-navy-2:#AEB6CF; --navy-line:rgba(244,241,234,.16);
+  --f-en:"Jost","Helvetica Neue",Arial,sans-serif;
+  --f-jp:"Noto Sans JP","Hiragino Sans","Yu Gothic",sans-serif;
+  --f-head:"Sawarabi Gothic","Noto Sans JP","Hiragino Sans",sans-serif;
+  color-scheme:light;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--cream);color:var(--ink);font-family:var(--f-jp);font-size:15px;line-height:2;letter-spacing:.04em;padding:0;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{max-width:100%;display:block}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--navy);outline-offset:3px}
+.gut{padding-inline:clamp(20px,5vw,72px)}
+.wrap{max-width:1180px;margin-inline:auto;min-width:0}
+.en{font-family:var(--f-en);font-weight:400;letter-spacing:.24em;font-size:11.5px;text-transform:uppercase;color:var(--ink-2)}
+.en-big{font-family:var(--f-en);font-weight:300;letter-spacing:.06em;line-height:1;color:var(--navy)}
+.serif-i{font-family:var(--f-en);font-style:normal;font-weight:300}
+
+/* ===== 頭 ===== */
+.head{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-block:16px 14px}
+.topbar{position:sticky;top:0;z-index:20;background:rgba(244,241,234,.55);-webkit-backdrop-filter:blur(14px) saturate(1.2);backdrop-filter:blur(14px) saturate(1.2);border-bottom:1px solid rgba(26,37,81,.08)}
+.head .logo{display:grid;gap:0;text-decoration:none;color:var(--navy);justify-items:start}
+.head .logo .lg{font-family:var(--f-jp);font-weight:700;font-size:24px;letter-spacing:.12em;line-height:1}
+.head .logo .tg{font-family:var(--f-jp);font-weight:500;font-size:9px;letter-spacing:.14em;line-height:1;margin-top:5px;color:var(--navy)}
+.head nav{display:flex;gap:4px 26px;flex-wrap:wrap;justify-content:flex-end}
+.head nav a{text-decoration:none;font-size:12.5px;letter-spacing:.2em;color:var(--navy);padding:4px 0;border-bottom:1px solid transparent;transition:border-color .25s}
+.head nav a:hover{border-bottom-color:var(--navy)}
+@media (max-width:560px){.head{flex-direction:column;align-items:flex-start;gap:10px}.head .logo .lg{font-size:22px}.head nav{justify-content:flex-start;gap:4px 18px}.head nav a{font-size:12px}}
+
+/* ===== 冒頭：夜空 ===== */
+.hero{position:relative;overflow:hidden;background:var(--navy);color:var(--on-navy);text-align:center;
+  padding:clamp(64px,10vw,128px) clamp(20px,6vw,80px) clamp(72px,10vw,128px);display:grid;justify-items:center;gap:20px;min-width:0}
+.hero::before{content:"";position:absolute;inset:0;pointer-events:none;
+  background:radial-gradient(60% 50% at 30% 20%,rgba(78,110,190,.45) 0,transparent 70%),radial-gradient(50% 40% at 78% 70%,rgba(60,90,170,.4) 0,transparent 70%),radial-gradient(30% 30% at 60% 30%,rgba(255,255,255,.06) 0,transparent 70%)}
+.hero .sky{position:absolute;inset:0;width:100%;height:100%;pointer-events:none}
+.hero .sky .tw{animation:tw 4s ease-in-out infinite}
+.hero .sky .tw:nth-child(2n){animation-delay:-1.3s}.hero .sky .tw:nth-child(3n){animation-delay:-2.6s;animation-duration:5.5s}
+@keyframes tw{0%,100%{opacity:.3}50%{opacity:1}}
+.hero>*{position:relative}
+.emblem{position:relative;width:min(96px,24vw);display:grid;place-items:center}
+.emblem img.mark{width:100%;height:auto;position:relative;animation:fade 1.2s ease-out both}
+@keyframes fade{from{opacity:0}to{opacity:1}}
+.emblem .orb{position:absolute;inset:-8%;width:116%;height:116%;overflow:visible}
+.emblem .orb .draw{stroke-dasharray:1000;stroke-dashoffset:1000;animation:draw 2.6s .2s ease-out forwards}
+.emblem .orb .dash{animation:spin 60s linear infinite;transform-origin:50% 50%}
+.emblem .orb .sat{animation:spin 16s linear infinite;transform-origin:50% 50%}
+.emblem .orb .sat2{animation:spin 26s linear infinite reverse;transform-origin:50% 50%}
+.emblem .orb .st{animation:tw 3s ease-in-out infinite}
+.emblem .orb .st:nth-child(2){animation-delay:-1s}
+@keyframes pop{0%{opacity:0;transform:scale(.88)}100%{opacity:1;transform:scale(1)}}
+@keyframes draw{to{stroke-dashoffset:0}}
+@keyframes spin{to{transform:rotate(360deg)}}
+.hero .word{width:min(120px,32vw);height:auto;animation:rise 1s .1s cubic-bezier(.2,.8,.2,1) both}
+.hero .copy{display:grid;gap:14px;justify-items:center;max-width:36em;min-width:0}
+.hero .copy>*{animation:rise 1s cubic-bezier(.2,.8,.2,1) both}
+.hero .copy>:nth-child(1){animation-delay:.4s}.hero .copy>:nth-child(2){animation-delay:.55s}.hero .copy>:nth-child(3){animation-delay:.7s}
+@keyframes rise{0%{opacity:0;transform:translateY(14px)}100%{opacity:1;transform:none}}
+.hero .kicker{margin:0;color:var(--on-navy-2)}
+.hero h1{margin:0;font-size:clamp(22px,3.6vw,38px);line-height:1.7;font-weight:500;letter-spacing:.14em;color:#fff;text-wrap:balance;overflow-wrap:anywhere}
+.hero .sub{margin:0;font-size:14px;letter-spacing:.14em;color:var(--on-navy-2)}
+.hero .rule{width:1px;height:44px;background:linear-gradient(180deg,var(--star),transparent);margin-top:4px}
+.act{display:flex;flex-wrap:wrap;gap:12px 14px;justify-content:center;margin-top:6px}
+.btn{display:inline-flex;align-items:center;gap:12px;padding:13px 28px 14px;border-radius:999px;text-decoration:none;font-size:13px;letter-spacing:.18em;transition:gap .25s,background .25s,color .25s}
+.btn svg{width:11px;height:11px}
+.btn:hover{gap:16px}
+.btn.solid{background:var(--cream);color:var(--navy)}
+.btn.solid:hover{background:#fff}
+.btn.line{border:1px solid rgba(244,241,234,.6);color:#fff}
+.btn.line:hover{background:rgba(255,255,255,.08)}
+.btn.navy{background:var(--navy);color:var(--cream)}
+.btn.navy:hover{background:var(--navy-3)}
+.btn.navy-line{border:1px solid var(--navy);color:var(--navy)}
+.btn.navy-line:hover{background:var(--navy);color:var(--cream)}
+@media (max-width:480px){.btn{width:100%;justify-content:center}}
+
+/* ===== 3つの約束 ===== */
+.promise{display:grid;gap:0;padding-block:clamp(48px,7vw,88px) 0}
+.promise ol{list-style:none;margin:0;padding:0;display:grid;counter-reset:c;border-top:1px solid var(--navy)}
+@media (min-width:760px){.promise ol{grid-template-columns:repeat(3,1fr)}}
+.promise li{counter-increment:c;display:grid;gap:8px;padding:26px 22px 28px 0;border-bottom:1px solid var(--line)}
+@media (min-width:760px){.promise li{padding-inline:0 clamp(20px,3vw,40px);border-bottom:0}.promise li+li{padding-left:clamp(20px,3vw,40px);border-left:1px solid var(--line)}}
+.promise li::before{content:"0" counter(c);font-family:var(--f-en);font-size:22px;letter-spacing:.1em;color:var(--navy);line-height:1}
+.promise b{font-size:17px;font-weight:500;color:var(--navy);letter-spacing:.14em}
+.promise span{font-size:13px;line-height:1.9;color:var(--ink-2)}
+
+/* ===== 節の共通 ===== */
+.sec{padding-block:clamp(64px,9vw,120px) 0;display:grid;gap:28px;grid-template-columns:minmax(0,1fr)}
+.sec-head{display:grid;gap:10px;max-width:44em}
+.sec-head .t{display:flex;align-items:baseline;gap:18px;flex-wrap:wrap}
+.sec-head .t .en-big{font-size:clamp(40px,6vw,64px)}
+.sec-head h2{margin:0;font-size:clamp(15px,1.6vw,17px);font-weight:500;letter-spacing:.24em;color:var(--navy)}
+.sec-head p{margin:0;font-size:14px;color:var(--ink-2)}
+
+/* 見本の列 */
+.count{display:flex;flex-wrap:wrap;gap:6px 22px;margin:0;padding:0;list-style:none;font-size:12px;color:var(--ink-2);letter-spacing:.16em}
+.count b{font-family:var(--f-en);font-weight:500;font-size:22px;color:var(--navy);margin-right:6px;letter-spacing:0}
+.deck,.strip{min-width:0}
+.deck{margin-inline:calc(-1*clamp(20px,5vw,72px));padding-inline:clamp(20px,5vw,72px)}
+.strip{overflow-x:auto;scrollbar-width:none;margin-inline:-6px;padding:6px}
+.strip::-webkit-scrollbar{display:none}
+.strip ol{list-style:none;margin:0;padding:0;display:flex;gap:14px;width:max-content}
+.strip a{display:grid;gap:8px;justify-items:center;text-decoration:none;width:74px}
+.strip a>span{display:block;width:74px;overflow:hidden;background:#fff;outline:1px solid var(--line);outline-offset:-1px;transition:transform .3s}
+.strip a:hover>span{transform:translateY(-5px)}
+.strip img{width:100%;aspect-ratio:390/560;object-fit:cover;object-position:top}
+.strip em{font-style:normal;font-family:var(--f-en);font-size:12px;letter-spacing:.06em;color:var(--ink-2)}
+
+.group{padding-block:clamp(36px,5vw,56px) 0;display:grid;gap:22px;grid-template-columns:minmax(0,1fr)}
+.group-head{display:flex;align-items:baseline;justify-content:space-between;gap:12px 20px;flex-wrap:wrap;border-bottom:1px solid var(--navy);padding-bottom:12px}
+.group-head h2{margin:0;display:flex;align-items:baseline;gap:14px;flex-wrap:wrap}
+.group-head h2 .en-big{font-size:clamp(28px,3.6vw,40px)}
+.group-head h2 span{font-size:13px;letter-spacing:.2em;color:var(--navy);font-weight:500}
+.group-head .n{font-family:var(--f-en);font-size:26px;color:var(--navy);line-height:1;margin:0}
+.group-head .n small{font-family:var(--f-jp);font-size:11.5px;color:var(--ink-2);margin-left:4px;letter-spacing:.1em}
+.cards{display:grid;grid-template-columns:1fr;gap:18px}
+@media (min-width:720px){.cards{grid-template-columns:1fr 1fr}}
+
+.card{position:relative;display:grid;grid-template-columns:150px 1fr;gap:10px 24px;padding:24px;background:var(--panel);border:1px solid var(--line-2);
+  align-content:start;scroll-margin-top:24px;transition:transform .25s,box-shadow .25s}
+.card:hover{transform:translateY(-3px);box-shadow:0 24px 44px -26px rgba(26,37,81,.35)}
+.card .shot{grid-row:1/span 3;display:block;overflow:hidden;align-self:start;background:#fff;aspect-ratio:390/760;outline:1px solid var(--line);outline-offset:-1px}
+.card .shot img{width:100%;height:100%;object-fit:cover;object-position:top}
+.card .head{display:grid;gap:2px;align-content:start;min-width:0;padding:0}
+.card .no{margin:0;font-size:11px}
+.card .name{margin:0;font-family:var(--f-en);font-weight:400;font-size:34px;line-height:1;letter-spacing:.01em;color:var(--navy)}
+.card .name small{font-family:var(--f-jp);font-style:normal;font-size:11px;letter-spacing:.16em;color:var(--ink-2);margin-left:10px}
+.card .kind{margin:6px 0 0;font-size:12px;color:var(--ink-2);letter-spacing:.12em}
+.mood{display:flex;flex-wrap:wrap;gap:6px;margin:8px 0 0;padding:0;list-style:none}
+.mood li{font-size:11px;line-height:1;padding:6px 10px 7px;border:1px solid var(--line);color:var(--ink-2);letter-spacing:.1em}
+.card .point{margin:0;font-size:13.5px;line-height:1.95;text-wrap:pretty}
+.card .spec{display:grid;grid-template-columns:auto 1fr;gap:5px 14px;margin:0;font-size:12.5px;align-items:center;border-top:1px solid var(--line-2);padding-top:12px}
+.card .spec dt{color:var(--ink-2);white-space:nowrap;font-size:11px;letter-spacing:.14em}
+.card .spec dd{margin:0;min-width:0}
+.chips{display:flex;gap:4px}
+.chips i{width:22px;height:14px;outline:1px solid rgba(26,37,81,.12);outline-offset:-1px;display:block}
+.card .open{grid-column:2;justify-self:start;display:inline-flex;align-items:center;gap:10px;margin-top:6px;padding:0 0 3px;border-bottom:1px solid var(--navy);color:var(--navy);text-decoration:none;font-size:12.5px;letter-spacing:.18em;transition:gap .25s}
+.card .open:hover{gap:16px}
+.card .open svg{width:11px;height:11px}
+@media (max-width:480px){.card{grid-template-columns:112px 1fr;padding:16px}.card .name{font-size:32px}.card .name small{display:block;margin:6px 0 0}
+  .card .shot{grid-row:1/span 2}.card .point,.card .spec,.card .open{grid-column:1/-1}}
+
+.note{margin-top:clamp(28px,4vw,40px);display:grid;gap:18px;padding:clamp(22px,3.5vw,36px);border:1px solid var(--line);background:rgba(255,255,255,.5)}
+@media (min-width:760px){.note{grid-template-columns:1fr 1fr;gap:32px}}
+.note h3{margin:0 0 6px;font-size:13px;font-weight:500;letter-spacing:.2em;color:var(--navy)}
+.note ul{margin:0;padding-left:1.2em;font-size:13px;color:var(--ink-2);display:grid;gap:3px}
+.note p{margin:0;font-size:13px;color:var(--ink-2)}
+
+/* 制作実績 */
+.works{display:grid;gap:14px}
+@media (min-width:760px){.works{grid-template-columns:repeat(3,1fr);gap:18px}}
+.works .slot{display:grid;place-items:center;align-content:center;gap:8px;aspect-ratio:4/3;border:1px solid var(--line);color:var(--ink-2);font-size:12px;letter-spacing:.18em;text-align:center;padding:20px}
+.works .slot .serif-i{font-size:22px;color:var(--navy);letter-spacing:.04em}
+.notice{margin:0;font-size:13px;color:var(--ink-2)}
+
+/* UtieOについて */
+.about-grid{display:grid;gap:28px}
+@media (min-width:900px){.about-grid{grid-template-columns:1fr 1fr;gap:56px;align-items:start}}
+.about-grid p{margin:0;font-size:14px;line-height:2.1}
+.about-grid .lead{font-size:16px;letter-spacing:.1em;color:var(--navy);font-weight:500;line-height:2}
+.name-mean{list-style:none;margin:0;padding:0;display:grid;border-top:1px solid var(--navy)}
+.name-mean li{display:grid;grid-template-columns:72px 1fr;gap:14px;align-items:baseline;padding:16px 0;border-bottom:1px solid var(--line)}
+.name-mean .en-big{font-size:36px}
+.name-mean b{display:block;font-size:14px;font-weight:500;color:var(--navy);letter-spacing:.12em}
+.name-mean span{font-size:13px;color:var(--ink-2);line-height:1.9}
+.people{display:grid;gap:14px}
+.people li{display:grid;grid-template-columns:auto 1fr;gap:16px;align-items:center;list-style:none;padding:16px 18px;background:var(--panel);border:1px solid var(--line-2)}
+.people{padding:0;margin:0}
+.people .av{width:56px;height:56px;display:grid;place-items:center;border-radius:50%;background:var(--navy);overflow:hidden}
+.people .av img{width:80%;height:auto;margin-top:12px}
+.people .av .serif-i{color:var(--cream);font-size:22px}
+.people b{display:block;font-family:var(--f-en);font-weight:400;font-size:20px;letter-spacing:.06em;color:var(--navy);line-height:1.2}
+.people span{font-size:13px;color:var(--ink-2);line-height:1.8}
+.svc{list-style:none;margin:0;padding:0;display:grid;gap:0;border-top:1px solid var(--navy)}
+.svc li{display:grid;gap:6px;padding:22px 0;border-bottom:1px solid var(--line)}
+@media (min-width:760px){.svc li{grid-template-columns:220px 1fr;gap:24px;align-items:baseline}}
+.svc b{font-size:16px;font-weight:500;color:var(--navy);letter-spacing:.14em}
+.svc span{font-size:13.5px;color:var(--ink-2);line-height:1.95}
+.flow{list-style:none;margin:0;padding:0;display:grid;gap:0;counter-reset:f;border-top:1px solid var(--navy)}
+@media (min-width:760px){.flow{grid-template-columns:repeat(4,1fr)}}
+.flow li{counter-increment:f;display:grid;gap:6px;padding:22px 20px 24px 0;border-bottom:1px solid var(--line)}
+@media (min-width:760px){.flow li{border-bottom:0;padding-inline:0 20px}.flow li+li{padding-left:20px;border-left:1px solid var(--line)}}
+.flow li::before{content:"0" counter(f);font-family:var(--f-en);font-size:22px;color:var(--navy);line-height:1}
+.flow b{font-size:14.5px;color:var(--navy);letter-spacing:.14em;font-weight:500}
+.flow span{font-size:12.5px;color:var(--ink-2);line-height:1.85}
+
+/* お問い合わせ */
+.contact{position:relative;margin-top:clamp(64px,9vw,120px);background:var(--navy);color:var(--on-navy);padding:clamp(56px,8vw,96px) clamp(20px,6vw,80px);display:grid;gap:18px;overflow:hidden;text-align:center;justify-items:center}
+.contact::before{content:"";position:absolute;inset:0;pointer-events:none;background:radial-gradient(50% 60% at 70% 30%,rgba(78,110,190,.4) 0,transparent 70%)}
+.contact>*{position:relative}
+.contact .sky2{position:absolute;inset:0;width:100%;height:100%;pointer-events:none}
+.contact .en-big{color:var(--cream);font-size:clamp(40px,6vw,64px)}
+.contact h2{margin:0;font-size:15px;font-weight:500;letter-spacing:.3em}
+.contact p{margin:0;font-size:14px;color:var(--on-navy-2);max-width:32em}
+.contact small{font-size:11.5px;color:var(--on-navy-2);letter-spacing:.14em}
+.foot{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:12px 20px;padding:28px 0 32px;color:var(--ink-2);font-size:11px;letter-spacing:.2em}
+.foot img{height:26px;width:auto;opacity:.9}
+
+/* ===== 動き・あしらい ===== */
+html.js .rv{opacity:0;transform:translateY(18px);transition:opacity .9s cubic-bezier(.2,.7,.2,1),transform .9s cubic-bezier(.2,.7,.2,1)}
+html.js .rv.in{opacity:1;transform:none}
+html.js .rv-stag>*{opacity:0;transform:translateY(14px);transition:opacity .8s cubic-bezier(.2,.7,.2,1),transform .8s cubic-bezier(.2,.7,.2,1)}
+html.js .rv-stag.in>*{opacity:1;transform:none}
+html.js .rv-stag.in>:nth-child(2){transition-delay:.12s}html.js .rv-stag.in>:nth-child(3){transition-delay:.24s}html.js .rv-stag.in>:nth-child(4){transition-delay:.36s}
+html.js .rv-stag.in>:nth-child(5){transition-delay:.48s}html.js .rv-stag.in>:nth-child(6){transition-delay:.6s}html.js .rv-stag.in>:nth-child(n+7){transition-delay:.7s}
+
+.glow{position:absolute;border-radius:50%;filter:blur(48px);pointer-events:none;opacity:.9}
+.hero .g1{width:46vw;height:46vw;max-width:620px;max-height:620px;left:-12%;top:-10%;background:radial-gradient(circle,rgba(96,132,214,.55) 0,rgba(96,132,214,0) 70%);animation:drift 18s ease-in-out infinite}
+.hero .g2{width:38vw;height:38vw;max-width:520px;max-height:520px;right:-8%;bottom:-18%;background:radial-gradient(circle,rgba(120,96,200,.45) 0,rgba(120,96,200,0) 70%);animation:drift 22s ease-in-out infinite reverse}
+.hero .g3{width:22vw;height:22vw;max-width:300px;max-height:300px;left:58%;top:8%;background:radial-gradient(circle,rgba(255,222,89,.22) 0,rgba(255,222,89,0) 70%);animation:drift 26s ease-in-out infinite}
+@keyframes drift{0%,100%{transform:translate(0,0)}33%{transform:translate(4%,6%)}66%{transform:translate(-3%,-4%)}}
+.hero .comet{position:absolute;top:18%;left:-10%;width:140px;height:1px;background:linear-gradient(90deg,rgba(255,255,255,0),#fff);opacity:0;transform:rotate(-22deg);animation:comet 11s ease-in 4s infinite}
+.hero .comet::after{content:"";position:absolute;right:-2px;top:-2px;width:5px;height:5px;border-radius:50%;background:#fff;box-shadow:0 0 10px 2px rgba(255,255,255,.8)}
+@keyframes comet{0%{opacity:0;transform:translate(0,0) rotate(-22deg)}4%{opacity:1}14%{opacity:0;transform:translate(80vw,34vw) rotate(-22deg)}100%{opacity:0;transform:translate(80vw,34vw) rotate(-22deg)}}
+.hero .const{position:absolute;inset:0;width:100%;height:100%;pointer-events:none}
+.hero .const path{stroke-dasharray:1200;stroke-dashoffset:1200;animation:draw 5s 1s ease-out forwards}
+@keyframes draw{to{stroke-dashoffset:0}}
+
+.cream-sky{position:relative;overflow:hidden}
+.cream-sky .glow{filter:blur(70px);opacity:.7}
+.cream-sky .c1{width:44vw;height:44vw;max-width:560px;max-height:560px;right:-14%;top:6%;background:radial-gradient(circle,rgba(150,178,240,.55) 0,rgba(150,178,240,0) 70%)}
+.cream-sky .c2{width:36vw;height:36vw;max-width:480px;max-height:480px;left:-12%;top:52%;background:radial-gradient(circle,rgba(255,222,89,.35) 0,rgba(255,222,89,0) 70%)}
+.cream-sky .c3{width:40vw;height:40vw;max-width:520px;max-height:520px;right:-10%;bottom:4%;background:radial-gradient(circle,rgba(150,178,240,.45) 0,rgba(150,178,240,0) 70%)}
+.cream-sky>.wrap{position:relative}
+.dots{position:absolute;inset:0;width:100%;height:100%;pointer-events:none;opacity:.5}
+
+.ic{width:34px;height:34px;stroke:var(--navy);fill:none;stroke-width:1.2;stroke-linecap:round;stroke-linejoin:round;flex:none}
+.promise .ic{margin-bottom:4px}
+.svc li{grid-template-columns:auto 1fr;align-items:center}
+.svc li span{grid-column:1/-1}
+@media (min-width:760px){.svc li{grid-template-columns:auto 200px 1fr;align-items:start}.svc li span{grid-column:auto}}
+.svc .ic{margin-top:4px}
+.flow .ic{margin-bottom:2px}
+
+.fig-tie{width:100%;max-width:420px;height:auto;display:block;margin-top:6px}
+.fig-tie .ln{stroke:var(--navy);stroke-width:1;fill:none;stroke-dasharray:6 5;animation:dashmove 6s linear infinite}
+@keyframes dashmove{to{stroke-dashoffset:-44}}
+.fig-tie .nd{fill:var(--cream);stroke:var(--navy);stroke-width:1.2}
+.fig-tie .st{fill:var(--star)}
+.fig-tie text{font-family:var(--f-en);font-weight:300;font-size:20px;letter-spacing:.06em;fill:var(--navy)}
+.fig-tie .jp{font-family:var(--f-jp);font-style:normal;font-size:9.5px;letter-spacing:.12em;fill:var(--ink-2)}
+
+.flow-orbit{width:100%;height:auto;display:block;margin:6px 0 -6px}
+.flow-orbit .tr{stroke:var(--navy);stroke-opacity:.35;stroke-width:1;fill:none;stroke-dasharray:3 6}
+.flow-orbit .pl{fill:var(--navy)}
+.flow-orbit .mv{offset-path:path("M20 22 C 260 -6, 540 50, 780 22");animation:along 12s linear infinite}
+@keyframes along{to{offset-distance:100%}}
+@media (max-width:759px){.flow-orbit{display:none}}
+
+.fig-count{display:flex;align-items:center;gap:14px;flex-wrap:wrap}
+.fig-count svg{width:min(320px,100%);height:auto}
+.fig-count circle.n{fill:var(--navy);animation:tw 3s ease-in-out infinite}
+.fig-count circle.y{fill:#B08FD0;animation:tw 3.6s ease-in-out infinite}
+
+.card::after{content:"";position:absolute;inset:0;pointer-events:none;background:linear-gradient(135deg,rgba(150,178,240,0),rgba(150,178,240,.35));opacity:0;transition:opacity .35s}
+.card:hover::after{opacity:1}
+.card>*{position:relative;z-index:1}
+.strip em{transition:color .25s}
+.strip a:hover em{color:var(--navy)}
+
+.contact .g1{width:50vw;height:50vw;max-width:600px;max-height:600px;left:-14%;top:-30%;background:radial-gradient(circle,rgba(96,132,214,.5) 0,rgba(96,132,214,0) 70%);animation:drift 20s ease-in-out infinite}
+.contact .g2{width:36vw;height:36vw;max-width:460px;max-height:460px;right:-10%;bottom:-30%;background:radial-gradient(circle,rgba(120,96,200,.45) 0,rgba(120,96,200,0) 70%);animation:drift 24s ease-in-out infinite reverse}
+.hero .rule{animation:pulse 3s ease-in-out infinite}
+@keyframes pulse{0%,100%{opacity:.5}50%{opacity:1}}
+
+/* ===== LP構成 ===== */
+.hero{min-height:min(760px,92vh);align-content:center}
+.hero .note1{margin:4px 0 0;font-size:12.5px;letter-spacing:.14em;color:var(--on-navy-2);display:flex;align-items:center;gap:8px;justify-content:center}
+.hero .note1 i{width:6px;height:6px;border-radius:50%;background:var(--star);box-shadow:0 0 8px 2px rgba(255,222,89,.6);display:block}
+.btn.line-cta{background:var(--cream);color:var(--navy);box-shadow:0 0 0 1px rgba(255,255,255,.4),0 14px 30px -14px rgba(0,0,0,.55)}
+.btn.line-cta:hover{background:#fff;box-shadow:0 0 0 6px rgba(244,241,234,.14),0 14px 30px -14px rgba(0,0,0,.55)}
+.btn.line-cta .lg{font-family:var(--f-en);font-weight:500;font-size:10.5px;letter-spacing:.1em;padding:4px 7px;border-radius:5px;background:var(--navy);color:var(--cream);line-height:1}
+
+/* 憧れ：1画面1メッセージ */
+.dream{display:grid;gap:clamp(24px,4vw,48px);align-items:center;min-height:min(720px,86vh);padding-block:clamp(56px,8vw,96px)}
+@media (min-width:860px){.dream{grid-template-columns:1fr 1fr}.dream.rev .phones{order:-1}}
+.dream .txt{display:grid;gap:14px;max-width:26em}
+.dream .txt h2{margin:0;font-size:clamp(24px,3.4vw,36px);font-weight:500;letter-spacing:.12em;line-height:1.7;color:var(--navy);text-wrap:balance}
+.dream .txt p{margin:0;font-size:14px;color:var(--ink-2);line-height:2}
+.phones{position:relative;height:clamp(380px,48vw,560px);display:flex;justify-content:center;align-items:center}
+.phones .glow{filter:blur(60px);opacity:.8;width:70%;height:70%;left:15%;top:15%;background:radial-gradient(circle,rgba(150,178,240,.6) 0,rgba(150,178,240,0) 70%)}
+.phone{position:absolute;width:clamp(150px,19vw,220px);aspect-ratio:390/760;border-radius:28px;overflow:hidden;background:#fff;
+  box-shadow:0 0 0 6px #fff,0 0 0 7px var(--line),0 40px 60px -30px rgba(26,37,81,.55);animation:bob 7s ease-in-out infinite}
+.phone img{width:100%;height:100%;object-fit:cover;object-position:top}
+.phone.p1{transform:translateX(-62%) rotate(-7deg);z-index:1;animation-delay:-2s}
+.phone.p2{z-index:2;animation-delay:0s}
+.phone.p3{transform:translateX(62%) rotate(7deg);z-index:1;animation-delay:-4s}
+.phone.q1{transform:translateX(-34%) rotate(-4deg);z-index:1}
+.phone.q2{transform:translateX(34%) translateY(24px) rotate(4deg);z-index:2;animation-delay:-3s}
+@keyframes bob{0%,100%{translate:0 0}50%{translate:0 -10px}}
+.phones .tag{position:absolute;z-index:3;padding:7px 14px 8px;border-radius:999px;font-size:11.5px;letter-spacing:.14em;background:rgba(255,255,255,.7);-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px);color:var(--navy);border:1px solid rgba(26,37,81,.1)}
+.phones .t1{left:6%;top:14%}.phones .t2{right:6%;bottom:14%}
+@media (max-width:859px){.dream{min-height:0}.phone.p1{transform:translateX(-52%) rotate(-7deg)}.phone.p3{transform:translateX(52%) rotate(7deg)}}
+
+/* 納得の見出し */
+.why-head{display:grid;gap:10px;padding-top:clamp(56px,8vw,96px)}
+.why-head h2{margin:0;font-size:clamp(22px,3vw,30px);font-weight:500;letter-spacing:.12em;color:var(--navy);line-height:1.7}
+.promise{padding-top:24px}
+
+/* よくある質問 */
+.faq{display:grid;gap:0;border-top:1px solid var(--navy)}
+.faq details{border-bottom:1px solid var(--line)}
+.faq summary{list-style:none;cursor:pointer;display:grid;grid-template-columns:auto 1fr auto;gap:14px;align-items:center;padding:20px 4px;font-size:15px;font-weight:500;color:var(--navy);letter-spacing:.06em}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary .q{font-family:var(--f-en);font-size:18px;color:var(--navy)}
+.faq summary .pm{width:14px;height:14px;position:relative}
+.faq summary .pm::before,.faq summary .pm::after{content:"";position:absolute;left:0;top:50%;width:14px;height:1px;background:var(--navy);transition:transform .3s}
+.faq summary .pm::after{transform:rotate(90deg)}
+.faq details[open] summary .pm::after{transform:rotate(0)}
+.faq .a{padding:0 4px 22px 36px;font-size:13.5px;color:var(--ink-2);line-height:2}
+
+/* 無料相談でできること */
+.offer{display:grid;gap:16px}
+@media (min-width:760px){.offer{grid-template-columns:repeat(3,1fr);gap:18px}}
+.offer li{list-style:none;display:grid;gap:8px;align-content:start;padding:26px 24px 28px;background:rgba(255,255,255,.6);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);border:1px solid rgba(255,255,255,.9);box-shadow:0 20px 40px -28px rgba(26,37,81,.35)}
+.offer{padding:0;margin:0}
+.offer b{font-size:16px;font-weight:500;color:var(--navy);letter-spacing:.1em}
+.offer span{font-size:13px;color:var(--ink-2);line-height:1.95}
+
+/* 最後の一押し */
+.contact h2.catch{font-size:clamp(22px,3.4vw,34px);font-weight:500;letter-spacing:.12em;line-height:1.7;color:#fff;margin:0}
+.contact .note1{margin:0;font-size:12.5px;letter-spacing:.14em;color:var(--on-navy-2);display:flex;align-items:center;gap:8px}
+.contact .note1 i{width:6px;height:6px;border-radius:50%;background:var(--star);box-shadow:0 0 8px 2px rgba(255,222,89,.6);display:block}
+.foot .sns{display:flex;gap:18px;align-items:center}
+.foot .sns a{color:var(--navy);text-decoration:none;letter-spacing:.14em;font-size:11px}
+.works-line{margin:0;display:flex;align-items:center;gap:12px;padding:16px 20px;border:1px solid var(--line);font-size:13px;color:var(--ink-2)}
+.works-line .ic{width:22px;height:22px}
+
+/* 見出しは Sawarabi Gothic（ウェイト1つなので太字にしない） */
+.hero h1,.dream .txt h2,.why-head h2,.sec-head h2,.group-head h2 span,.promise b,.svc b,.flow b,.offer b,.faq summary,
+.contact h2.catch,.about-grid .lead,.note h3,.people b,.name-mean b,.card .kind{font-family:var(--f-head);font-weight:400}
+.hero h1{letter-spacing:.1em}
+.dream .txt h2,.contact h2.catch{letter-spacing:.1em}
+
+/* 見出しを語のまとまりの途中で折り返さない */
+.nw{display:inline-block}
+
+/* 開いた瞬間のロゴアニメ（1回だけ再生→フェードで冒頭へ） */
+.opening{position:fixed;inset:0;z-index:100;display:grid;place-items:center;background:var(--cream);transition:opacity .8s ease,visibility .8s}
+.opening video{width:min(240px,52vw);height:auto;display:block}
+.opening.out{opacity:0;visibility:hidden}
+html:not(.js) .opening{display:none}
+html.op .hero *,html.op .hero::before{animation-play-state:paused}
+
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}html.js .rv,html.js .rv-stag>*{opacity:1;transform:none}.opening{display:none!important}}
+</style>
+<div class="opening" id="opening" aria-hidden="true"><video src="anim/opening.mp4" width="480" height="648" muted autoplay playsinline preload="auto"></video></div>
+<script>
+document.documentElement.classList.add('js');
+(function(){
+  var o=document.getElementById('opening'),r=document.documentElement,seen=false;
+  try{seen=sessionStorage.getItem('utieo-opening')==='1';sessionStorage.setItem('utieo-opening','1')}catch(e){}
+  if(seen||matchMedia('(prefers-reduced-motion:reduce)').matches){o.remove();return}
+  r.classList.add('op');r.style.overflow='hidden';
+  var done=false;
+  function end(){if(done)return;done=true;o.classList.add('out');r.classList.remove('op');r.style.overflow='';setTimeout(function(){o.remove()},900)}
+  var v=o.querySelector('video');
+  v.addEventListener('ended',end);v.addEventListener('error',end);
+  var p=v.play();if(p&&p.catch)p.catch(end);
+  setTimeout(end,9000);o.addEventListener('click',end);
+})();
+</script>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+<symbol id="i-heart" viewBox="0 0 34 34"><path d="M17 28s-10-6.2-10-13.3A5.3 5.3 0 0 1 17 12a5.3 5.3 0 0 1 10 2.7C27 21.8 17 28 17 28z"/><path d="M23 7l.8 2.2L26 10l-2.2.8L23 13l-.8-2.2L20 10l2.2-.8z" fill="#FFDE59" stroke="none"/></symbol>
+<symbol id="i-palette" viewBox="0 0 34 34"><path d="M17 5a12 12 0 1 0 0 24c2.2 0 3-1.3 3-2.6 0-1.6-1.3-2.2-1.3-3.6 0-1.3 1.1-2.2 2.6-2.2H23a6 6 0 0 0 6-6C29 9.4 23.6 5 17 5z"/><circle cx="11" cy="16" r="1.4"/><circle cx="15" cy="10.5" r="1.4"/><circle cx="21" cy="10.5" r="1.4"/><circle cx="24.5" cy="15.5" r="1.4"/></symbol>
+<symbol id="i-phone" viewBox="0 0 34 34"><rect x="10" y="4" width="14" height="26" rx="3"/><path d="M15 7h4M14 26h6"/><path d="M27 12l.7 1.8 1.8.7-1.8.7-.7 1.8-.7-1.8-1.8-.7 1.8-.7z" fill="#FFDE59" stroke="none"/></symbol>
+<symbol id="i-grid" viewBox="0 0 34 34"><rect x="6" y="6" width="9" height="9" rx="2"/><rect x="19" y="6" width="9" height="9" rx="2"/><rect x="6" y="19" width="9" height="9" rx="2"/><rect x="19" y="19" width="9" height="9" rx="2"/></symbol>
+<symbol id="i-compass" viewBox="0 0 34 34"><circle cx="17" cy="17" r="12"/><path d="M21.5 12.5l-2.8 7.2-7.2 2.8 2.8-7.2z"/><circle cx="17" cy="17" r="1.2" fill="#1A2551"/></symbol>
+<symbol id="i-ear" viewBox="0 0 34 34"><path d="M8 15a9 9 0 0 1 18 0c0 5-4 5.5-4 9.5a4 4 0 0 1-8 0"/><path d="M13 15a4 4 0 0 1 8 0c0 2.4-2 2.6-2 5"/></symbol>
+<symbol id="i-list" viewBox="0 0 34 34"><rect x="7" y="5" width="20" height="24" rx="2"/><path d="M12 11h10M12 16h10M12 21h6"/></symbol>
+<symbol id="i-pen" viewBox="0 0 34 34"><path d="M7 27l2-7L22 7a2.8 2.8 0 0 1 4 4L13 24z"/><path d="M19 10l5 5"/></symbol>
+<symbol id="i-rocket" viewBox="0 0 34 34"><path d="M17 5c4 3 6 8 6 13l-6 5-6-5c0-5 2-10 6-13z"/><circle cx="17" cy="14" r="2"/><path d="M11 18l-4 4 5 1M23 18l4 4-5 1M17 23v6"/></symbol>
+<symbol id="i-star4" viewBox="0 0 34 34"><path d="M17 5l2.6 9.4L29 17l-9.4 2.6L17 29l-2.6-9.4L5 17l9.4-2.6z"/></symbol>
+</svg>
+<div class="gut topbar"><div class="wrap" id="top">
+<header class="head"><a class="logo" href="#top"><span class="lg">UTIEO</span><span class="tg">SNS design | graphic design</span></a><nav aria-label="ページ内の案内"><a href="#samples">サンプル</a><a href="#works">制作実績</a><a href="#about">UtieOについて</a><a href="#contact">お問い合わせ</a></nav></header>
+</div></div>
+<section class="hero" aria-labelledby="h1">
+<svg class="sky" viewBox="0 0 1200 640" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+<g fill="#fff" fill-opacity=".85"><circle cx="389" cy="97" r="0.9" class="tw"/><circle cx="643" cy="234" r="0.9"/><circle cx="258" cy="55" r="1.8" class="tw"/><circle cx="109" cy="272" r="2.2" class="tw"/><circle cx="268" cy="402" r="0.9"/><circle cx="476" cy="625" r="0.9"/><circle cx="160" cy="268" r="2.2" class="tw"/><circle cx="370" cy="522" r="1.1" class="tw"/><circle cx="685" cy="120" r="0.9"/><circle cx="75" cy="38" r="1.1" class="tw"/><circle cx="638" cy="497" r="1.8"/><circle cx="544" cy="192" r="1.1"/><circle cx="293" cy="368" r="2.2" class="tw"/><circle cx="412" cy="287" r="2.2"/><circle cx="142" cy="268" r="1.4" class="tw"/><circle cx="587" cy="25" r="0.9"/><circle cx="688" cy="560" r="1.4" class="tw"/><circle cx="420" cy="318" r="1.8" class="tw"/><circle cx="112" cy="173" r="0.9" class="tw"/><circle cx="842" cy="414" r="1.8" class="tw"/><circle cx="463" cy="428" r="0.9"/><circle cx="427" cy="391" r="1.8" class="tw"/><circle cx="922" cy="83" r="1.1" class="tw"/><circle cx="1100" cy="318" r="1.1" class="tw"/><circle cx="659" cy="565" r="1.8"/><circle cx="334" cy="266" r="1.4"/><circle cx="457" cy="148" r="0.9" class="tw"/><circle cx="278" cy="149" r="1.8"/><circle cx="219" cy="180" r="1.1" class="tw"/><circle cx="443" cy="362" r="1.1"/><circle cx="619" cy="395" r="0.9" class="tw"/><circle cx="1045" cy="609" r="2.2" class="tw"/><circle cx="479" cy="66" r="1.8" class="tw"/><circle cx="81" cy="134" r="1.1" class="tw"/><circle cx="721" cy="66" r="2.2" class="tw"/><circle cx="122" cy="233" r="0.9" class="tw"/><circle cx="250" cy="241" r="1.4"/><circle cx="723" cy="303" r="0.9"/><circle cx="1192" cy="298" r="1.8" class="tw"/><circle cx="173" cy="480" r="1.4" class="tw"/><circle cx="830" cy="330" r="1.1"/><circle cx="634" cy="94" r="2.2"/><circle cx="910" cy="191" r="0.9"/><circle cx="313" cy="235" r="1.1" class="tw"/><circle cx="267" cy="347" r="2.2" class="tw"/><circle cx="268" cy="519" r="1.1"/><circle cx="982" cy="474" r="1.1" class="tw"/><circle cx="591" cy="468" r="0.9"/><circle cx="567" cy="124" r="2.2"/><circle cx="537" cy="600" r="1.4"/><circle cx="438" cy="141" r="1.1" class="tw"/><circle cx="405" cy="309" r="2.2"/><circle cx="575" cy="418" r="0.9"/><circle cx="144" cy="249" r="1.1" class="tw"/><circle cx="214" cy="505" r="1.4" class="tw"/><circle cx="1135" cy="462" r="1.8" class="tw"/><circle cx="1136" cy="464" r="1.1"/><circle cx="33" cy="378" r="1.8"/><circle cx="175" cy="529" r="1.8"/><circle cx="420" cy="351" r="1.1" class="tw"/><circle cx="959" cy="465" r="0.9"/><circle cx="1120" cy="278" r="1.1"/><circle cx="253" cy="161" r="1.4"/><circle cx="916" cy="209" r="2.2" class="tw"/><circle cx="157" cy="582" r="1.4"/><circle cx="795" cy="522" r="2.2" class="tw"/><circle cx="1101" cy="321" r="2.2" class="tw"/><circle cx="613" cy="559" r="1.1"/><circle cx="931" cy="96" r="1.1" class="tw"/><circle cx="870" cy="356" r="1.4"/></g>
+<g fill="#FFDE59" style="display:block"><path d="M120 120 l3 8 8 3 -8 3 -3 8 -3 -8 -8 -3 8 -3z"/><path d="M1060 90 l2.5 7 7 2.5 -7 2.5 -2.5 7 -2.5 -7 -7 -2.5 7 -2.5z"/><path d="M980 520 l2 6 6 2 -6 2 -2 6 -2 -6 -6 -2 6 -2z"/></g>
+</svg>
+<span class="glow g1"></span><span class="glow g2"></span><span class="glow g3"></span><span class="comet"></span>
+<svg class="const" viewBox="0 0 1200 640" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><path d="M90 420 L180 300 L300 340 L360 220 M960 140 L1040 210 L1130 190 L1100 300" fill="none" stroke="#F4F1EA" stroke-opacity=".35" stroke-width="1"/><g fill="#F4F1EA"><circle cx="90" cy="420" r="2.2"/><circle cx="180" cy="300" r="2.2"/><circle cx="300" cy="340" r="2.2"/><circle cx="360" cy="220" r="2.2"/><circle cx="960" cy="140" r="2.2"/><circle cx="1040" cy="210" r="2.2"/><circle cx="1130" cy="190" r="2.2"/><circle cx="1100" cy="300" r="2.2"/></g></svg>
+<div class="copy">
+<h1 id="h1"><span class="nw">あなたの想いと</span>　<span class="nw">届けたい人を</span><br>ひとつに結ぶ</h1>
+<p class="sub"><span class="nw">世界観から整える</span>　<span class="nw">小さなデザインアトリエ</span></p>
+<div class="act"><a class="btn line-cta" href="https://line.me/R/ti/p/@022gsnou" target="_blank" rel="noopener"><span class="lg">LINE</span>無料で相談する</a></div>
+<p class="note1"><i></i>ご相談・お見積りは無料です</p>
+</div>
+</section>
+<div class="gut cream-sky"><span class="glow c1"></span><span class="glow c2"></span><span class="glow c3"></span><svg class="dots" viewBox="0 0 1200 6000" preserveAspectRatio="xMidYMin slice" aria-hidden="true">
+<g fill="#1A2551" fill-opacity=".5"><circle cx="747" cy="4451" r="2.2" class="tw"/><circle cx="559" cy="5660" r="0.9"/><circle cx="136" cy="2814" r="1.1" class="tw"/><circle cx="122" cy="1496" r="1.1" class="tw"/><circle cx="218" cy="5205" r="1.8" class="tw"/><circle cx="957" cy="833" r="2.2" class="tw"/><circle cx="159" cy="5834" r="0.9" class="tw"/><circle cx="259" cy="5895" r="1.1" class="tw"/><circle cx="1154" cy="3235" r="1.1" class="tw"/><circle cx="1162" cy="1181" r="1.8" class="tw"/><circle cx="433" cy="996" r="1.1" class="tw"/><circle cx="398" cy="4904" r="2.2" class="tw"/><circle cx="814" cy="2027" r="1.4" class="tw"/><circle cx="367" cy="4179" r="1.1" class="tw"/><circle cx="846" cy="342" r="0.9"/><circle cx="429" cy="2426" r="2.2"/><circle cx="439" cy="3471" r="0.9" class="tw"/><circle cx="849" cy="3742" r="1.1" class="tw"/><circle cx="295" cy="4917" r="1.8" class="tw"/><circle cx="426" cy="3148" r="1.8" class="tw"/><circle cx="898" cy="4783" r="1.4" class="tw"/><circle cx="1135" cy="547" r="1.4"/><circle cx="435" cy="889" r="1.4"/><circle cx="654" cy="1875" r="1.4" class="tw"/><circle cx="959" cy="3761" r="1.4"/><circle cx="194" cy="291" r="2.2"/><circle cx="487" cy="1424" r="2.2" class="tw"/><circle cx="300" cy="3906" r="1.1" class="tw"/><circle cx="1099" cy="196" r="1.8" class="tw"/><circle cx="248" cy="5888" r="2.2"/><circle cx="756" cy="4728" r="0.9" class="tw"/><circle cx="448" cy="353" r="1.8" class="tw"/><circle cx="544" cy="5996" r="1.1"/><circle cx="544" cy="2929" r="1.4" class="tw"/><circle cx="349" cy="2423" r="1.1" class="tw"/><circle cx="986" cy="3191" r="1.1"/><circle cx="599" cy="2031" r="0.9" class="tw"/><circle cx="618" cy="3289" r="2.2" class="tw"/><circle cx="943" cy="4649" r="2.2"/><circle cx="912" cy="2181" r="1.4"/><circle cx="318" cy="5886" r="1.4"/><circle cx="408" cy="1072" r="0.9" class="tw"/><circle cx="928" cy="1955" r="1.4" class="tw"/><circle cx="980" cy="3885" r="1.4" class="tw"/><circle cx="773" cy="4427" r="1.8" class="tw"/><circle cx="1011" cy="5219" r="1.8"/><circle cx="1148" cy="3109" r="2.2"/><circle cx="238" cy="2172" r="1.8" class="tw"/><circle cx="95" cy="4025" r="1.8" class="tw"/><circle cx="936" cy="3485" r="1.8" class="tw"/><circle cx="664" cy="5203" r="1.4"/><circle cx="33" cy="960" r="1.8"/><circle cx="217" cy="4554" r="1.1"/><circle cx="50" cy="2830" r="1.1" class="tw"/><circle cx="1070" cy="665" r="1.1" class="tw"/><circle cx="658" cy="2493" r="1.4" class="tw"/><circle cx="734" cy="3541" r="1.1"/><circle cx="449" cy="2103" r="1.4"/><circle cx="1040" cy="4133" r="2.2" class="tw"/><circle cx="43" cy="3681" r="0.9" class="tw"/><circle cx="615" cy="5707" r="1.4"/><circle cx="982" cy="2515" r="2.2"/><circle cx="443" cy="853" r="2.2" class="tw"/><circle cx="572" cy="1195" r="1.1"/><circle cx="421" cy="5361" r="0.9" class="tw"/><circle cx="391" cy="5499" r="2.2" class="tw"/><circle cx="755" cy="5348" r="1.8" class="tw"/><circle cx="1172" cy="2960" r="1.8"/><circle cx="456" cy="5767" r="1.1"/><circle cx="312" cy="5886" r="1.8" class="tw"/><circle cx="24" cy="5671" r="1.4" class="tw"/><circle cx="344" cy="2862" r="0.9"/><circle cx="1153" cy="1473" r="0.9"/><circle cx="992" cy="79" r="2.2"/><circle cx="292" cy="2846" r="0.9" class="tw"/><circle cx="321" cy="929" r="1.4" class="tw"/><circle cx="730" cy="2848" r="2.2"/><circle cx="1074" cy="97" r="1.1" class="tw"/><circle cx="640" cy="2017" r="1.4"/><circle cx="32" cy="2099" r="2.2" class="tw"/><circle cx="3" cy="3319" r="0.9"/><circle cx="655" cy="87" r="1.8"/><circle cx="827" cy="5720" r="1.8"/><circle cx="1009" cy="2854" r="1.1"/><circle cx="558" cy="4549" r="1.4"/><circle cx="834" cy="2597" r="1.4"/><circle cx="567" cy="1866" r="1.1" class="tw"/><circle cx="659" cy="2986" r="1.4"/><circle cx="511" cy="3248" r="0.9" class="tw"/><circle cx="276" cy="4918" r="0.9"/><circle cx="31" cy="4336" r="0.9"/><circle cx="841" cy="293" r="0.9" class="tw"/><circle cx="775" cy="5713" r="1.1"/><circle cx="847" cy="2628" r="1.1"/><circle cx="497" cy="967" r="2.2" class="tw"/><circle cx="667" cy="3961" r="0.9" class="tw"/><circle cx="685" cy="710" r="1.8"/><circle cx="161" cy="2590" r="1.4"/><circle cx="587" cy="2120" r="1.4"/><circle cx="166" cy="1768" r="2.2"/><circle cx="607" cy="5463" r="2.2"/><circle cx="265" cy="379" r="1.1" class="tw"/><circle cx="901" cy="3102" r="1.1"/><circle cx="1036" cy="2720" r="1.8" class="tw"/><circle cx="856" cy="3930" r="0.9"/><circle cx="43" cy="5180" r="2.2"/><circle cx="286" cy="5262" r="1.8"/><circle cx="129" cy="3184" r="2.2"/><circle cx="64" cy="905" r="1.8"/><circle cx="268" cy="696" r="1.8"/><circle cx="168" cy="3749" r="1.4"/><circle cx="348" cy="5583" r="1.4"/><circle cx="454" cy="4336" r="1.4"/><circle cx="965" cy="2600" r="1.4"/><circle cx="711" cy="3440" r="1.1" class="tw"/><circle cx="116" cy="199" r="1.1" class="tw"/><circle cx="588" cy="5623" r="1.4" class="tw"/><circle cx="564" cy="5339" r="2.2"/><circle cx="388" cy="2771" r="1.1" class="tw"/><circle cx="191" cy="2248" r="1.8"/><circle cx="564" cy="3312" r="0.9" class="tw"/><circle cx="194" cy="1722" r="1.1" class="tw"/><circle cx="1076" cy="2066" r="1.4" class="tw"/><circle cx="71" cy="130" r="1.8" class="tw"/><circle cx="1134" cy="707" r="1.4" class="tw"/><circle cx="809" cy="4376" r="1.1" class="tw"/><circle cx="858" cy="3448" r="0.9"/><circle cx="1094" cy="4240" r="1.4" class="tw"/><circle cx="434" cy="401" r="1.8" class="tw"/><circle cx="289" cy="4033" r="0.9"/><circle cx="517" cy="5853" r="0.9" class="tw"/><circle cx="544" cy="4088" r="1.1" class="tw"/><circle cx="658" cy="5938" r="2.2"/><circle cx="1127" cy="4299" r="1.1"/><circle cx="589" cy="5614" r="0.9"/><circle cx="773" cy="2985" r="0.9" class="tw"/><circle cx="1000" cy="2675" r="0.9"/><circle cx="1140" cy="1167" r="2.2"/><circle cx="226" cy="1402" r="1.4"/><circle cx="104" cy="5911" r="1.1"/><circle cx="1028" cy="1286" r="0.9" class="tw"/><circle cx="429" cy="2539" r="1.8"/><circle cx="159" cy="74" r="1.4"/><circle cx="1070" cy="5998" r="2.2" class="tw"/><circle cx="374" cy="526" r="1.4"/><circle cx="375" cy="779" r="0.9" class="tw"/><circle cx="837" cy="4793" r="2.2"/><circle cx="331" cy="2956" r="1.1" class="tw"/><circle cx="240" cy="1716" r="1.4"/><circle cx="86" cy="4617" r="1.8"/><circle cx="667" cy="5377" r="1.1"/><circle cx="531" cy="4901" r="0.9"/><circle cx="841" cy="1606" r="1.8"/><circle cx="386" cy="1839" r="1.1" class="tw"/><circle cx="811" cy="1713" r="0.9"/><circle cx="887" cy="167" r="0.9" class="tw"/><circle cx="156" cy="2143" r="1.4"/><circle cx="734" cy="1387" r="1.8" class="tw"/><circle cx="241" cy="2149" r="1.1"/><circle cx="992" cy="4361" r="0.9" class="tw"/></g>
+<g fill="#FFDE59" style="display:none"><path d="M120 120 l3 8 8 3 -8 3 -3 8 -3 -8 -8 -3 8 -3z"/><path d="M1060 90 l2.5 7 7 2.5 -7 2.5 -2.5 7 -2.5 -7 -7 -2.5 7 -2.5z"/><path d="M980 520 l2 6 6 2 -6 2 -2 6 -2 -6 -6 -2 6 -2z"/></g>
+</svg><div class="wrap">
+<section class="dream" aria-label="世界観が伝わる">
+<div class="txt rv"><h2>お店の空気が<br>ひと目で伝わる</h2><p>写真・色・言葉の選び方で、ページはお店そのものになります。</p></div>
+<div class="phones rv"><span class="glow"></span><span class="phone p1"><img src="thumbs/hanare.webp" alt="" loading="lazy"></span><span class="phone p2"><img src="thumbs/tsumugi.webp" alt="" loading="lazy"></span><span class="phone p3"><img src="thumbs/fuu.webp" alt="" loading="lazy"></span></div>
+</section>
+<section class="dream rev" aria-label="雰囲気はお店ごとに">
+<div class="txt rv"><h2>ナチュラルでも<br>シックでも</h2><p>同じ型は使いません。あなたらしい世界観に、1つずつ整えます。</p></div>
+<div class="phones rv"><span class="glow"></span><span class="phone q1"><img src="thumbs/shizuku.webp" alt="" loading="lazy"></span><span class="phone q2"><img src="thumbs/mayu.webp" alt="" loading="lazy"></span><span class="tag t1">透明感</span><span class="tag t2">シック</span></div>
+</section>
+<div class="why-head rv"><p class="en">Promise</p><h2><span class="nw">UtieO が大切にしている</span>　<span class="nw">3つのこと</span></h2></div>
+<section class="promise" aria-label="3つの約束">
+<ol class="rv-stag">
+<li><svg class="ic" aria-hidden="true"><use href="#i-heart"/></svg><b>想いが伝わる</b><span>誰に、何を届けたいのか。言葉と流れを、そこから組み立てます。</span></li>
+<li><svg class="ic" aria-hidden="true"><use href="#i-palette"/></svg><b>雰囲気が整う</b><span>色・写真・書体を、お店の世界観に合わせて選びます。</span></li>
+<li><svg class="ic" aria-hidden="true"><use href="#i-phone"/></svg><b>発信がたのしくなる</b><span>スマホで読みやすく、次に何をすればよいかが分かる形にします。</span></li>
+</ol>
+</section>
+<section class="sec" id="samples" aria-labelledby="h-samples">
+<div class="sec-head rv"><div class="t"><span class="en-big">Samples</span><h2 id="h-samples">サンプル</h2></div>
+<p>架空のサロン・教室を題材に組んだ、LP（お店を1枚で紹介するページ）の見本13本です。気になる見本は、スマホで開いてみてください。</p></div>
+<div class="deck rv"><nav class="strip" aria-label="見本の一覧"><ol><li><a href="#sora"><span><img src="thumbs/sora.webp" alt="" loading="lazy"></span><em>01</em></a></li><li><a href="#nagi"><span><img src="thumbs/nagi.webp" alt="" loading="lazy"></span><em>02</em></a></li><li><a href="#hinata"><span><img src="thumbs/hinata.webp" alt="" loading="lazy"></span><em>03</em></a></li><li><a href="#tsumugi"><span><img src="thumbs/tsumugi.webp" alt="" loading="lazy"></span><em>04</em></a></li><li><a href="#hiyori"><span><img src="thumbs/hiyori.webp" alt="" loading="lazy"></span><em>05</em></a></li><li><a href="#koharu"><span><img src="thumbs/koharu.webp" alt="" loading="lazy"></span><em>06</em></a></li><li><a href="#shizuku"><span><img src="thumbs/shizuku.webp" alt="" loading="lazy"></span><em>07</em></a></li><li><a href="#hanare"><span><img src="thumbs/hanare.webp" alt="" loading="lazy"></span><em>08</em></a></li><li><a href="#mayu"><span><img src="thumbs/mayu.webp" alt="" loading="lazy"></span><em>09</em></a></li><li><a href="#fuu"><span><img src="thumbs/fuu.webp" alt="" loading="lazy"></span><em>10</em></a></li><li><a href="#hodoku"><span><img src="thumbs/hodoku.webp" alt="" loading="lazy"></span><em>11</em></a></li><li><a href="#shion"><span><img src="thumbs/shion.webp" alt="" loading="lazy"></span><em>12</em></a></li><li><a href="#sasae"><span><img src="thumbs/sasae.webp" alt="" loading="lazy"></span><em>13</em></a></li></ol></nav></div>
+</section>
+<section class="group" id="nail" aria-labelledby="h-nail">
+<div class="group-head rv"><h2 id="h-nail"><span class="en-big">Nail Salon</span><span>ネイルサロン</span></h2><p class="n">09<small>本</small></p></div>
+<div class="cards rv-stag">
+<article class="card" id="sora">
+<a class="shot" href="sora/" target="_blank" rel="noopener" aria-label="sora の見本を開く"><img src="thumbs/sora.webp" alt="sora のスマホでの冒頭の画面" loading="lazy"></a>
+<div class="head">
+<p class="no en">No.01</p>
+<h3 class="name">sora<small>そら</small></h3>
+<p class="kind">自爪育成ネイルサロン</p>
+<ul class="mood" aria-label="雰囲気"><li>やわらかい</li><li>明るい</li></ul>
+</div>
+<p class="point">悩みから選べる8つの入口を用意しました。冒頭では、縦長の写真がゆっくり流れます。</p>
+<dl class="spec">
+<dt>向いている</dt><dd>悩み別のメニューが多いサロン</dd>
+<dt>色</dt><dd><span class="chips"><i style="background:#FFF6EF" title="#FFF6EF"></i><i style="background:#F8E6D8" title="#F8E6D8"></i><i style="background:#E0AA82" title="#E0AA82"></i><i style="background:#3D3D3D" title="#3D3D3D"></i></span></dd>
+</dl>
+<a class="open" href="sora/" target="_blank" rel="noopener">見本を開く<svg viewBox="0 0 12 12" aria-hidden="true"><path d="M3 9 9 3M4.5 3H9v4.5" fill="none" stroke="currentColor" stroke-width="1.4"/></svg></a>
+</article>
+<article class="card" id="nagi">
+<a class="shot" href="nagi/" target="_blank" rel="noopener" aria-label="nagi の見本を開く"><img src="thumbs/nagi.webp" alt="nagi のスマホでの冒頭の画面" loading="lazy"></a>
+<div class="head">
+<p class="no en">No.02</p>
+<h3 class="name">nagi<small>なぎ</small></h3>
+<p class="kind">自爪育成ネイルサロン</p>
+<ul class="mood" aria-label="雰囲気"><li>静か</li><li>清潔</li></ul>
+</div>
+<p class="point">飾りは、見出しの下の細い金の線だけ。濃紺をボタンと見出しの芯にしています。</p>
+<dl class="spec">
+<dt>向いている</dt><dd>落ち着いた印象で、信頼を伝えたいサロン</dd>
+<dt>色</dt><dd><span class="chips"><i style="background:#F7F7F5" title="#F7F7F5"></i><i style="background:#E8EDEF" title="#E8EDEF"></i><i style="background:#2F3F4A" title="#2F3F4A"></i><i style="background:#C4B394" title="#C4B394"></i></span></dd>
+</dl>
+<a class="open" href="nagi/" target="_blank" rel="noopener">見本を開く<svg viewBox="0 0 12 12" aria-hidden="true"><path d="M3 9 9 3M4.5 3H9v4.5" fill="none" stroke="currentColor" stroke-width="1.4"/></svg></a>
+</article>
+<article class="card" id="hinata">
+<a class="shot" href="hinata/" target="_blank" rel="noopener" aria-label="hinata の見本を開く"><img src="thumbs/hinata.webp" alt="hinata のスマホでの冒頭の画面" loading="lazy"></a>
+<div class="head">
+<p class="no en">No.03</p>
+<h3 class="name">hinata<small>ひなた</small></h3>
+<p class="kind">自爪育成ネイルサロン</p>
+<ul class="mood" aria-label="雰囲気"><li>かわいい</li><li>親しみ</li></ul>
+</div>
+<p class="point">方眼紙の地に、アーチや花の形に切った写真。初回のメニューを冒頭のカードで見せます。</p>
+<dl class="spec">
+<dt>向いている</dt><dd>気軽さを出したい、自宅の一室のサロン</dd>
+<dt>色</dt><dd><span class="chips"><i style="background:#F8F5F0" title="#F8F5F0"></i><i style="background:#E3EEF3" title="#E3EEF3"></i><i style="background:#7A5A45" title="#7A5A45"></i><i style="background:#8FB9CC" title="#8FB9CC"></i></span></dd>
+</dl>
+<a class="open" href="hinata/" target="_blank" rel="noopener">見本を開く<svg viewBox="0 0 12 12" aria-hidden="true"><path d="M3 9 9 3M4.5 3H9v4.5" fill="none" stroke="currentColor" stroke-width="1.4"/></svg></a>
+</article>
+<article class="card" id="tsumugi">
+<a class="shot" href="tsumugi/" target="_blank" rel="noopener" aria-label="tsumugi の見本を開く"><img src="thumbs/tsumugi.webp" alt="tsumugi のスマホでの冒頭の画面" loading="lazy"></a>
+<div class="head">
+<p class="no en">No.04</p>
+<h3 class="name">tsumugi<small>つむぎ</small></h3>
+<p class="kind">自爪育成ネイルサロン</p>
+<ul class="mood" aria-label="雰囲気"><li>静けさ</li><li>自然</li></ul>
+</div>
+<p class="point">止まった写真の上を、文字が流れていく冒頭です。宿のような落ち着いた空気をつくりました。</p>
+<dl class="spec">
+<dt>向いている</dt><dd>郊外や、自然の多い土地のサロン</dd>
+<dt>色</dt><dd><span class="chips"><i style="background:#F0F0ED" title="#F0F0ED"></i><i style="background:#E2E2DF" title="#E2E2DF"></i><i style="background:#706253" title="#706253"></i><i style="background:#333333" title="#333333"></i></span></dd>
+</dl>
+<a class="open" href="tsumugi/" target="_blank" rel="noopener">見本を開く<svg viewBox="0 0 12 12" aria-hidden="true"><path d="M3 9 9 3M4.5 3H9v4.5" fill="none" stroke="currentColor" stroke-width="1.4"/></svg></a>
+</article>
+<article class="card" id="hiyori">
+<a class="shot" href="hiyori/" target="_blank" rel="noopener" aria-label="hiyori の見本を開く"><img src="thumbs/hiyori.webp" alt="hiyori のスマホでの冒頭の画面" loading="lazy"></a>
+<div class="head">
+<p class="no en">No.05</p>
+<h3 class="name">hiyori<small>ひより</small></h3>
+<p class="kind">自爪育成ネイルサロン</p>
+<ul class="mood" aria-label="雰囲気"><li>凛とした</li><li>和</li></ul>
+</div>
+<p class="point">縦書きの冒頭と、細い罫線で区切る紙面。朝から夜までの「指先の一日」で手入れを伝えます。</p>
+<dl class="spec">
+<dt>向いている</dt><dd>自宅での手入れの指導に力を入れるサロン</dd>
+<dt>色</dt><dd><span class="chips"><i style="background:#F3F2EC" title="#F3F2EC"></i><i style="background:#2B2A26" title="#2B2A26"></i><i style="background:#5B6B60" title="#5B6B60"></i><i style="background:#F0D3CC" title="#F0D3CC"></i></span></dd>
+</dl>
+<a class="open" href="hiyori/" target="_blank" rel="noopener">見本を開く<svg viewBox="0 0 12 12" aria-hidden="true"><path d="M3 9 9 3M4.5 3H9v4.5" fill="none" stroke="currentColor" stroke-width="1.4"/></svg></a>
+</article>
+<article class="card" id="koharu">
+<a class="shot" href="koharu/" target="_blank" rel="noopener" aria-label="koharu の見本を開く"><img src="thumbs/koharu.webp" alt="koharu のスマホでの冒頭の画面" loading="lazy"></a>
+<div class="head">
+<p class="no en">No.06</p>
+<h3 class="name">koharu<small>こはる</small></h3>
+<p class="kind">ジェルネイルサロン</p>
+<ul class="mood" aria-label="雰囲気"><li>楽しい</li><li>雑貨風</li></ul>
+</div>
+<p class="point">シール風に貼った写真と、荷札のラベル。定額のデザインを6つ並べて、選びやすくしました。</p>
+<dl class="spec">
+<dt>向いている</dt><dd>デザインの幅を見せたいサロン</dd>
+<dt>色</dt><dd><span class="chips"><i style="background:#DFD2BA" title="#DFD2BA"></i><i style="background:#2F7F7A" title="#2F7F7A"></i><i style="background:#C8553D" title="#C8553D"></i><i style="background:#F2DBC6" title="#F2DBC6"></i></span></dd>
+</dl>
+<a class="open" href="koharu/" target="_blank" rel="noopener">見本を開く<svg viewBox="0 0 12 12" aria-hidden="true"><path d="M3 9 9 3M4.5 3H9v4.5" fill="none" stroke="currentColor" stroke-width="1.4"/></svg></a>
+</article>
+<article class="card" id="shizuku">
+<a class="shot" href="shizuku/" target="_blank" rel="noopener" aria-label="shizuku の見本を開く"><img src="thumbs/shizuku.webp" alt="shizuku のスマホでの冒頭の画面" loading="lazy"></a>
+<div class="head">
+<p class="no en">No.07</p>
+<h3 class="name">shizuku<small>しずく</small></h3>
+<p class="kind">自爪育成ネイルサロン</p>
+<ul class="mood" aria-label="雰囲気"><li>透明感</li><li>澄んだ</li></ul>
+</div>
+<p class="point">描いた虹色の光に、アーチ形の写真を重ねた冒頭です。白と青灰で、澄んだ印象にまとめました。</p>
+<dl class="spec">
+<dt>向いている</dt><dd>やさしく清潔な印象を出したいサロン</dd>
+<dt>色</dt><dd><span class="chips"><i style="background:#F7F6F3" title="#F7F6F3"></i><i style="background:#5E7A89" title="#5E7A89"></i><i style="background:#8A7D6B" title="#8A7D6B"></i><i style="background:#6B716D" title="#6B716D"></i></span></dd>
+</dl>
+<a class="open" href="shizuku/" target="_blank" rel="noopener">見本を開く<svg viewBox="0 0 12 12" aria-hidden="true"><path d="M3 9 9 3M4.5 3H9v4.5" fill="none" stroke="currentColor" stroke-width="1.4"/></svg></a>
+</article>
+<article class="card" id="hanare">
+<a class="shot" href="hanare/" target="_blank" rel="noopener" aria-label="hanare の見本を開く"><img src="thumbs/hanare.webp" alt="hanare のスマホでの冒頭の画面" loading="lazy"></a>
+<div class="head">
+<p class="no en">No.08</p>
+<h3 class="name">hanare<small>はなれ</small></h3>
+<p class="kind">自爪育成ネイルサロン</p>
+<ul class="mood" aria-label="雰囲気"><li>あたたか</li><li>季節感</li></ul>
+</div>
+<p class="point">杏色と青磁色の面を、交互に置いています。パソコンで開くと、左右に案内が固定されます。</p>
+<dl class="spec">
+<dt>向いている</dt><dd>写真が多く、季節の発信をするサロン</dd>
+<dt>色</dt><dd><span class="chips"><i style="background:#F2E4DA" title="#F2E4DA"></i><i style="background:#E4ECE7" title="#E4ECE7"></i><i style="background:#9A6B58" title="#9A6B58"></i><i style="background:#55705F" title="#55705F"></i></span></dd>
+</dl>
+<a class="open" href="hanare/" target="_blank" rel="noopener">見本を開く<svg viewBox="0 0 12 12" aria-hidden="true"><path d="M3 9 9 3M4.5 3H9v4.5" fill="none" stroke="currentColor" stroke-width="1.4"/></svg></a>
+</article>
+<article class="card" id="mayu">
+<a class="shot" href="mayu/" target="_blank" rel="noopener" aria-label="mayu の見本を開く"><img src="thumbs/mayu.webp" alt="mayu のスマホでの冒頭の画面" loading="lazy"></a>
+<div class="head">
+<p class="no en">No.09</p>
+<h3 class="name">mayu<small>まゆ</small></h3>
+<p class="kind">自爪育成ネイルサロン</p>
+<ul class="mood" aria-label="雰囲気"><li>大人</li><li>シック</li></ul>
+</div>
+<p class="point">冒頭に写真を置かず、灰色がかったベージュ一色と一文だけ。お客さまの声より先に、ケアの根拠を置きました。</p>
+<dl class="spec">
+<dt>向いている</dt><dd>30〜40代の働く女性が多いサロン</dd>
+<dt>色</dt><dd><span class="chips"><i style="background:#B9ABA0" title="#B9ABA0"></i><i style="background:#F1ECE7" title="#F1ECE7"></i><i style="background:#E7E0D9" title="#E7E0D9"></i><i style="background:#6B5F55" title="#6B5F55"></i></span></dd>
+</dl>
+<a class="open" href="mayu/" target="_blank" rel="noopener">見本を開く<svg viewBox="0 0 12 12" aria-hidden="true"><path d="M3 9 9 3M4.5 3H9v4.5" fill="none" stroke="currentColor" stroke-width="1.4"/></svg></a>
+</article>
+</div></section>
+<section class="group" id="yoga" aria-labelledby="h-yoga">
+<div class="group-head rv"><h2 id="h-yoga"><span class="en-big">Yoga Studio</span><span>ヨガ教室</span></h2><p class="n">04<small>本</small></p></div>
+<div class="cards rv-stag">
+<article class="card" id="fuu">
+<a class="shot" href="fuu/" target="_blank" rel="noopener" aria-label="fuu の見本を開く"><img src="thumbs/fuu.webp" alt="fuu のスマホでの冒頭の画面" loading="lazy"></a>
+<div class="head">
+<p class="no en">No.10</p>
+<h3 class="name">fuu<small>ふう</small></h3>
+<p class="kind">プライベートヨガ</p>
+<ul class="mood" aria-label="雰囲気"><li>やわらか</li><li>ばら色</li></ul>
+</div>
+<p class="point">30〜40代の「なんとなく不調」に絞った内容です。6つのお悩みチェックから読み進められます。</p>
+<dl class="spec">
+<dt>向いている</dt><dd>一対一で、ゆっくり教える教室</dd>
+<dt>色</dt><dd><span class="chips"><i style="background:#F8F5F1" title="#F8F5F1"></i><i style="background:#F1EAE4" title="#F1EAE4"></i><i style="background:#74504F" title="#74504F"></i><i style="background:#C3A6A2" title="#C3A6A2"></i></span></dd>
+</dl>
+<a class="open" href="fuu/" target="_blank" rel="noopener">見本を開く<svg viewBox="0 0 12 12" aria-hidden="true"><path d="M3 9 9 3M4.5 3H9v4.5" fill="none" stroke="currentColor" stroke-width="1.4"/></svg></a>
+</article>
+<article class="card" id="hodoku">
+<a class="shot" href="hodoku/" target="_blank" rel="noopener" aria-label="hodoku の見本を開く"><img src="thumbs/hodoku.webp" alt="hodoku のスマホでの冒頭の画面" loading="lazy"></a>
+<div class="head">
+<p class="no en">No.11</p>
+<h3 class="name">hodoku<small>ほどく</small></h3>
+<p class="kind">少人数ヨガ</p>
+<ul class="mood" aria-label="雰囲気"><li>明るい</li><li>丸み</li></ul>
+</div>
+<p class="point">肩と首のこりに絞った内容です。「45分・駅から3分・手ぶらでOK」を冒頭で伝えます。</p>
+<dl class="spec">
+<dt>向いている</dt><dd>仕事帰りの人が通う、駅近の教室</dd>
+<dt>色</dt><dd><span class="chips"><i style="background:#FEFBF0" title="#FEFBF0"></i><i style="background:#FDF4D2" title="#FDF4D2"></i><i style="background:#7E6A99" title="#7E6A99"></i><i style="background:#7B5757" title="#7B5757"></i></span></dd>
+</dl>
+<a class="open" href="hodoku/" target="_blank" rel="noopener">見本を開く<svg viewBox="0 0 12 12" aria-hidden="true"><path d="M3 9 9 3M4.5 3H9v4.5" fill="none" stroke="currentColor" stroke-width="1.4"/></svg></a>
+</article>
+<article class="card" id="shion">
+<a class="shot" href="shion/" target="_blank" rel="noopener" aria-label="shion の見本を開く"><img src="thumbs/shion.webp" alt="shion のスマホでの冒頭の画面" loading="lazy"></a>
+<div class="head">
+<p class="no en">No.12</p>
+<h3 class="name">shion<small>しおん</small></h3>
+<p class="kind">女性専用ヨガ</p>
+<ul class="mood" aria-label="雰囲気"><li>手帳</li><li>手書き</li></ul>
+</div>
+<p class="point">40歳前後の、体と気分のゆらぎに寄りそう内容です。体調手帳のような方眼紙と、手書き風の文字で組みました。</p>
+<dl class="spec">
+<dt>向いている</dt><dd>同じ世代の講師が営む、小さな教室</dd>
+<dt>色</dt><dd><span class="chips"><i style="background:#FAF9FB" title="#FAF9FB"></i><i style="background:#EAE4EF" title="#EAE4EF"></i><i style="background:#65557A" title="#65557A"></i><i style="background:#D3C3E3" title="#D3C3E3"></i></span></dd>
+</dl>
+<a class="open" href="shion/" target="_blank" rel="noopener">見本を開く<svg viewBox="0 0 12 12" aria-hidden="true"><path d="M3 9 9 3M4.5 3H9v4.5" fill="none" stroke="currentColor" stroke-width="1.4"/></svg></a>
+</article>
+<article class="card" id="sasae">
+<a class="shot" href="sasae/" target="_blank" rel="noopener" aria-label="sasae の見本を開く"><img src="thumbs/sasae.webp" alt="sasae のスマホでの冒頭の画面" loading="lazy"></a>
+<div class="head">
+<p class="no en">No.13</p>
+<h3 class="name">sasae<small>ささえ</small></h3>
+<p class="kind">少人数ヨガ</p>
+<ul class="mood" aria-label="雰囲気"><li>図解</li><li>わかりやすい</li></ul>
+</div>
+<p class="point">腰がつらい人に向けた内容です。9つの図と数字で、無理をしない進め方を説明します。</p>
+<dl class="spec">
+<dt>向いている</dt><dd>安全への配慮を、ていねいに伝えたい教室</dd>
+<dt>色</dt><dd><span class="chips"><i style="background:#F9FAF4" title="#F9FAF4"></i><i style="background:#DCEDEA" title="#DCEDEA"></i><i style="background:#256560" title="#256560"></i><i style="background:#C5D63A" title="#C5D63A"></i></span></dd>
+</dl>
+<a class="open" href="sasae/" target="_blank" rel="noopener">見本を開く<svg viewBox="0 0 12 12" aria-hidden="true"><path d="M3 9 9 3M4.5 3H9v4.5" fill="none" stroke="currentColor" stroke-width="1.4"/></svg></a>
+</article>
+</div></section>
+<section class="note rv" aria-label="見本についてのお知らせ">
+<div><h3>見本のこと</h3>
+<ul>
+<li>サロン名・人物・住所・料金・お客さまの声は、すべて見本用の架空のものです。</li>
+<li>写真はフリー素材（Pexels）を使っています。</li>
+<li>予約ボタンを押しても、実際の予約はできません。</li>
+</ul></div>
+<div><h3>作り方のこと</h3>
+<p>どの見本も、スマホで読みやすい文字の大きさと余白を基準にしています。実際のLPでは、写真・文章・料金をヒアリングのうえ差し替えます。</p></div>
+</section>
+<section class="sec" id="works" aria-labelledby="h-works" style="padding-top:clamp(40px,6vw,64px)">
+<div class="sec-head rv"><div class="t"><span class="en-big">Works</span><h2 id="h-works">制作実績</h2></div></div>
+<p class="works-line rv"><svg class="ic" aria-hidden="true"><use href="#i-star4"/></svg>お客さまの許可をいただいたものから、順に掲載します。</p>
+</section>
+<section class="sec" id="about" aria-labelledby="h-about">
+<div class="sec-head rv"><div class="t"><span class="en-big">About</span><h2 id="h-about">UtieOについて</h2></div></div>
+<div class="about-grid">
+<div class="rv" style="display:grid;gap:22px">
+<p class="lead">UtieO design（ユーティオ デザイン）は、世界観から整える、小さなデザインアトリエです。</p>
+<p>サロンやスタジオを営んでいて、「世界観を整えたいけれど、デザインが苦手・時間がない」。そんな方といっしょに考え、想いが届く形にしていきます。</p>
+<svg class="fig-tie" viewBox="0 0 420 150" aria-label="U と tie と O を線で結んだ図">
+<path class="ln" d="M60 96 C 130 30, 200 30, 210 62 S 300 120, 360 60"/>
+<circle class="nd" cx="60" cy="96" r="14"/><circle class="nd" cx="210" cy="62" r="14"/><circle class="nd" cx="360" cy="60" r="14"/>
+<path class="st" d="M300 22l2 5.5 5.5 2-5.5 2-2 5.5-2-5.5-5.5-2 5.5-2z"/><path class="st" d="M130 120l1.5 4 4 1.5-4 1.5-1.5 4-1.5-4-4-1.5 4-1.5z"/>
+<text x="60" y="68" text-anchor="middle">U</text><text x="60" y="130" text-anchor="middle" class="jp">あなた</text>
+<text x="210" y="34" text-anchor="middle">tie</text><text x="210" y="98" text-anchor="middle" class="jp">結ぶ</text>
+<text x="360" y="32" text-anchor="middle">O</text><text x="360" y="96" text-anchor="middle" class="jp">ひとつに</text>
+</svg>
+</div>
+<div class="rv" style="display:grid;gap:22px">
+<ul class="people" aria-label="デザインする人">
+<li><div class="av"><img src="chara/smile.webp" alt="" loading="lazy"></div><div><b>mee</b><span>デザインする人。想いを聞き、形にします。病院で管理栄養士として働いた頃の「人の役に立ちたい」と、小さな頃から好きだった「創ること」が重なった場所が、UtieO design です。</span></div></li>
+</ul>
+<ul class="svc" aria-label="できること">
+<li><svg class="ic" aria-hidden="true"><use href="#i-phone"/></svg><b>LP制作</b><span>お店を1枚で紹介するページ。スマホで読みやすく、予約や問い合わせにつながる流れで組みます。</span></li>
+<li><svg class="ic" aria-hidden="true"><use href="#i-grid"/></svg><b>Instagram の世界観設計</b><span>プロフィールと投稿の設計、Canva（無料で使えるデザインツール）のテンプレート、色と書体の決め方。</span></li>
+<li><svg class="ic" aria-hidden="true"><use href="#i-compass"/></svg><b>世界観の整理</b><span>お店の想いを言葉にして、色・書体・言い回しの決めごとにまとめます。</span></li>
+</ul>
+</div>
+</div>
+</section>
+<section class="sec" aria-labelledby="h-flow">
+<div class="sec-head rv"><div class="t"><span class="en-big">Flow</span><h2 id="h-flow">ご依頼の流れ</h2></div></div>
+<svg class="flow-orbit" viewBox="0 0 800 60" aria-hidden="true">
+<path class="tr" d="M20 22 C 260 -6, 540 50, 780 22"/>
+<circle class="pl mv" r="4"/>
+<circle cx="20" cy="22" r="2.5" fill="#1A2551"/><circle cx="780" cy="22" r="2.5" fill="#1A2551"/>
+<path d="M410 8l1.5 4 4 1.5-4 1.5-1.5 4-1.5-4-4-1.5 4-1.5z" fill="#FFDE59"/>
+</svg>
+<ol class="flow rv-stag">
+<li><svg class="ic" aria-hidden="true"><use href="#i-ear"/></svg><b>無料相談</b><span>公式LINEで、お店のことや届けたい想いを伺います。</span></li>
+<li><svg class="ic" aria-hidden="true"><use href="#i-list"/></svg><b>お見積り・構成案</b><span>必要なものとお見積りをお伝えし、ページの流れを文章でお見せします。</span></li>
+<li><svg class="ic" aria-hidden="true"><use href="#i-pen"/></svg><b>デザイン</b><span>スマホで見ながら、色・写真・言葉を整えていきます。</span></li>
+<li><svg class="ic" aria-hidden="true"><use href="#i-rocket"/></svg><b>公開・お渡し</b><span>公開の設定まで行い、更新のしかたもお伝えします。</span></li>
+</ol>
+</section>
+<section class="sec" aria-labelledby="h-faq">
+<div class="sec-head rv"><div class="t"><span class="en-big">Q&amp;A</span><h2 id="h-faq">よくある質問</h2></div></div>
+<div class="faq rv">
+<details><summary><span class="q">Q</span>料金はいくらかかりますか？<span class="pm"></span></summary><p class="a">作るものによって変わります。無料相談で内容を伺い、お見積りをお伝えします。</p></details>
+<details><summary><span class="q">Q</span>相談だけでも大丈夫ですか？<span class="pm"></span></summary><p class="a">はい。ご依頼するかどうかは、お見積りを見てから決めてください。</p></details>
+<details><summary><span class="q">Q</span>何を頼めばいいか、決まっていません。<span class="pm"></span></summary><p class="a">大丈夫です。LPがいいのか、Instagram から整えるのがいいのか、お話ししながら一緒に決めます。</p></details>
+<details><summary><span class="q">Q</span>デザインが苦手でも、あとで自分で更新できますか？<span class="pm"></span></summary><p class="a">公開のあとに、更新のしかたをお伝えします。</p></details>
+</div>
+</section>
+<section class="sec" aria-labelledby="h-offer">
+<div class="sec-head rv"><div class="t"><span class="en-big">Consultation</span><h2 id="h-offer"><span class="nw">無料相談で</span>　<span class="nw">できること</span></h2></div><p>まずは気軽に、公式LINE からどうぞ。</p></div>
+<ul class="offer rv-stag">
+<li><b>お見積りがわかる</b><span>作るものと料金を、ご依頼の前にお伝えします。</span></li>
+<li><b>必要なものだけ選べる</b><span>LP だけ、Instagram だけ、まとめて。お店に合わせて組み合わせます。</span></li>
+<li><b>見本を見ながら決められる</b><span>13本の見本を見ながら、好きな雰囲気を一緒に探します。</span></li>
+</ul>
+</section>
+</div></div>
+<section class="contact" id="contact" aria-labelledby="h-contact">
+<svg class="sky2" viewBox="0 0 1200 640" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+<g fill="#fff" fill-opacity=".85"><circle cx="543" cy="358" r="1.8" class="tw"/><circle cx="1026" cy="122" r="2.2" class="tw"/><circle cx="737" cy="119" r="1.8" class="tw"/><circle cx="109" cy="518" r="0.9"/><circle cx="475" cy="290" r="2.2"/><circle cx="748" cy="532" r="0.9" class="tw"/><circle cx="228" cy="155" r="0.9"/><circle cx="392" cy="378" r="1.1"/><circle cx="768" cy="320" r="0.9" class="tw"/><circle cx="334" cy="638" r="0.9"/><circle cx="378" cy="147" r="1.4" class="tw"/><circle cx="676" cy="69" r="0.9"/><circle cx="464" cy="613" r="0.9" class="tw"/><circle cx="1112" cy="33" r="1.8"/><circle cx="477" cy="47" r="1.1"/><circle cx="324" cy="56" r="1.4" class="tw"/><circle cx="492" cy="591" r="1.1" class="tw"/><circle cx="121" cy="38" r="1.8" class="tw"/><circle cx="671" cy="286" r="1.1"/><circle cx="923" cy="268" r="1.8" class="tw"/><circle cx="505" cy="136" r="1.4"/><circle cx="1170" cy="379" r="0.9" class="tw"/><circle cx="473" cy="547" r="2.2" class="tw"/><circle cx="1187" cy="136" r="1.4" class="tw"/><circle cx="732" cy="531" r="1.8" class="tw"/><circle cx="108" cy="373" r="1.1" class="tw"/><circle cx="442" cy="398" r="1.1"/><circle cx="580" cy="368" r="1.8" class="tw"/><circle cx="185" cy="581" r="2.2" class="tw"/><circle cx="228" cy="473" r="2.2" class="tw"/><circle cx="1140" cy="565" r="2.2" class="tw"/><circle cx="57" cy="70" r="2.2"/><circle cx="286" cy="451" r="1.4" class="tw"/><circle cx="1086" cy="314" r="2.2" class="tw"/><circle cx="864" cy="44" r="1.1" class="tw"/><circle cx="784" cy="394" r="0.9" class="tw"/><circle cx="1101" cy="131" r="0.9" class="tw"/><circle cx="494" cy="159" r="0.9" class="tw"/><circle cx="443" cy="366" r="1.1" class="tw"/><circle cx="166" cy="288" r="1.4"/></g>
+<g fill="#FFDE59" style="display:block"><path d="M120 120 l3 8 8 3 -8 3 -3 8 -3 -8 -8 -3 8 -3z"/><path d="M1060 90 l2.5 7 7 2.5 -7 2.5 -2.5 7 -2.5 -7 -7 -2.5 7 -2.5z"/><path d="M980 520 l2 6 6 2 -6 2 -2 6 -2 -6 -6 -2 6 -2z"/></g>
+</svg><span class="glow g1"></span><span class="glow g2"></span>
+<h2 class="catch" id="h-contact"><span class="nw">あなたの想いと</span>　<span class="nw">届けたい人を</span><br>ひとつに結ぶ</h2>
+<div class="act"><a class="btn line-cta" href="https://line.me/R/ti/p/@022gsnou" target="_blank" rel="noopener"><span class="lg">LINE</span>無料で相談する</a></div>
+<p class="note1"><i></i>ご相談・お見積りは無料です</p>
+</section>
+<div class="gut"><div class="wrap"><footer class="foot"><span>UtieO design · SNS design | graphic design</span><span class="sns"><a href="https://www.instagram.com/mee_utieo/" target="_blank" rel="noopener">Instagram @mee_UtieO</a><a href="https://line.me/R/ti/p/@022gsnou" target="_blank" rel="noopener">LINE @022gsnou</a></span></footer></div></div><script>
+document.documentElement.classList.add('js');
+addEventListener('DOMContentLoaded',function(){
+  var els=[].slice.call(document.querySelectorAll('.rv,.rv-stag'));
+  if(!('IntersectionObserver' in window)){els.forEach(function(e){e.classList.add('in')});return}
+  var io=new IntersectionObserver(function(en){en.forEach(function(x){if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target)}})},{rootMargin:'0px 0px -8% 0px',threshold:.08});
+  els.forEach(function(e){var r=e.getBoundingClientRect();if(r.top<innerHeight*.9){e.classList.add('in')}else{io.observe(e)}});
+});
+</script>
+</body>
+</html>
